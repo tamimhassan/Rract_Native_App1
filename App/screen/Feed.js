@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { StyleSheet, FlatList, View, Text } from 'react-native';
 
 import Header from '../components/Header';
@@ -7,9 +7,7 @@ import Book from '../components/Book';
 import { BookContext } from '../context/BookContext';
 
 const Feed = () => {
-  // const [books, setBooks] = useState();
   const [BOOKS] = useContext(BookContext);
-  // console.log(BOOKS);
 
   return (
     <View style={styles.home}>
