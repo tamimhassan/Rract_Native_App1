@@ -1,9 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
-import Header from '../components/Header';
-
 import { createStackNavigator } from '@react-navigation/stack';
 import { ProfileIcon } from '../assects/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
 const Stack = createStackNavigator();
 
@@ -14,12 +13,12 @@ const Profile = () => {
         <ProfileIcon size={200} color="black" />
       </View>
       <View>
-        <ProfileIcon size={20} color="black" />
+        <FontAwesomeIcon icon={['far', 'user']} />
         <View>
           <Text>Name</Text>
           <TextInput value="Tamim Hassan" />
         </View>
-        {/* <PenIcon height={20} width={20} /> */}
+        <FontAwesomeIcon icon={['fas', 'pen']} />
       </View>
     </View>
   );
